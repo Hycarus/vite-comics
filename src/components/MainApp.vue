@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="container">
-            <h1 class="text-white p-4">
+            <h1 class="text-white py-4 m-0 ">
                 --&gt; Content goes here &lt;--
             </h1>
         </div>
