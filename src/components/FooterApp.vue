@@ -2,11 +2,11 @@
     <div class="footer-top">
         <FooterTop/>
     </div>
-    <div>
+    <div class="footer-main">
         <FooterMain/>
     </div>
     <div>
-        <FooterMain/>
+        <FooterBottom/>
     </div>
 </template>
 
@@ -28,5 +28,10 @@ import FooterBottom from './footer/FooterBottom.vue';
 @use '../assets/style/main.scss' as *;
     .footer-top{
         background-color: $main_color;
+    }
+    .footer-main{
+        background-image: url(img/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
