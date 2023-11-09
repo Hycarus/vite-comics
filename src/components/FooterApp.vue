@@ -5,7 +5,7 @@
     <div class="footer-main">
         <FooterMain/>
     </div>
-    <div>
+    <div class="footer-bottom">
         <FooterBottom/>
     </div>
 </template>
@@ -33,5 +33,8 @@ import FooterBottom from './footer/FooterBottom.vue';
         background-image: url(img/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .footer-bottom{
+        background-color: $secondary_color;
     }
 </style>
