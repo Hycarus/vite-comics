@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div class="d-flex justify-content-between ">
-            <div class="p-3">
+        <div class="d-flex justify-content-between align-item-center mt-2">
+            <div class="">
                 <Logo/>
             </div>
             <div>

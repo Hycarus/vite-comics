@@ -1,7 +1,7 @@
 <template>
-    <ul class="nav justify-content-center p-5">
-        <li class="nav-item p-2 " v-for="(element, index) in menu" :key="index">
-            <a href="#" class="nav-link text-black text-uppercase pb-4 " :class="{'border-active': isActive(element.id)}" @click="activeMenu = element.id">{{element.text}}</a>
+    <ul class="nav justify-content-center pt-5">
+        <li class="nav-item" v-for="(element, index) in menu" :key="index">
+            <a href="#" class="nav-link text-black text-uppercase pb-4" :class="{'border-active': isActive(element.id)}" @click="activeMenu = element.id">{{element.text}}</a>
         </li>
     </ul>
 </template>

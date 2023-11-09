@@ -2,6 +2,9 @@
   <header>
     <HeaderApp/>
   </header>
+  <main>
+    <MainApp/>
+  </main>
   <footer>
     <FooterApp/>
   </footer>
@@ -10,11 +13,13 @@
 <script>
 import HeaderApp from './components/HeaderApp.vue';
 import FooterApp from './components/FooterApp.vue';
+import MainApp from './components/MainApp.vue';
   export default {
     name: 'App',
     components: {
       HeaderApp,
       FooterApp,
+      MainApp,
     },
     data(){
       return{
