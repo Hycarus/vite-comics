@@ -1,10 +1,12 @@
 <template>
-    <div class="d-flex justify-content-evenly ">
-        <div class="p-3">
-            <Logo/>
-        </div>
-        <div>
-            <NavBar/>
+    <div class="container">
+        <div class="d-flex justify-content-between ">
+            <div class="p-3">
+                <Logo/>
+            </div>
+            <div>
+                <NavBar/>
+            </div>
         </div>
     </div>
 </template>

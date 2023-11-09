@@ -1,7 +1,7 @@
 <template>
     <ul class="nav justify-content-center p-5">
         <li class="nav-item p-2 " v-for="(element, index) in menu" :key="index">
-            <a href="#" class="nav-link text-black text-uppercase pb-4 " :class="{'is-active': isActive(element.id)}" @click="activeMenu = element.id">{{element.text}}</a>
+            <a href="#" class="nav-link text-black text-uppercase pb-4 " :class="{'border-active': isActive(element.id)}" @click="activeMenu = element.id">{{element.text}}</a>
         </li>
     </ul>
 </template>
@@ -70,10 +70,6 @@
             isActive(id){
                 return id === this.activeMenu ? true : false;
             },
-            changeMenu(index){
-                const pippo = this.activeIndex(this.menu[index].id, this.menu)
-                
-            },
             getIndex(id, array){
                 return array.findIndex((el) => el.id === id);
             }
@@ -88,7 +84,8 @@
 
 <style lang="scss">
 @use '../../assets/style/main.scss' as *;
-    .is-active{
-        border-bottom: 3px solid $main_color;
+    .border-active{
+        border-bottom: 10px solid $main_color;
+        color: $main_color !important;
     }
 </style>
