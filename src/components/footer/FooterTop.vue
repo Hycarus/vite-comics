@@ -1,8 +1,11 @@
 <template>
     <main class="container">   
-        <ul class="nav justify-content-center p-3">
-            <li class="nav-item p-3 " v-for="(element, index) in footerTopImage" key="index">
-                <img :src="element.image" alt="">
+        <ul class="nav py-3">
+            <li class="my-3 d-flex align-items-center justify-content-center" v-for="(element, index) in footerTopImage" :key="index">
+                <div class="text-center">
+                    <img class="w-50" :src="element.image" :alt="element.text">
+                </div>
+                <div class="text-uppercase text-white my-text">{{ element.text }}</div>
             </li>
         </ul>
     </main>
@@ -17,22 +20,27 @@
                     {
                         id: 1,
                         image: 'img/buy-comics-digital-comics.png',
+                        text: 'digital comics',
                     },
                     {
                         id: 2,
                         image: 'img/buy-comics-merchandise.png',
+                        text: 'dc merchandise',
                     },
                     {
                         id: 3,
                         image: 'img/buy-comics-subscriptions.png',
+                        text: 'subscriptions',
                     },
                     {
                         id: 4,
                         image: 'img/buy-comics-shop-locator.png',
+                        text: 'comic shop locator',
                     },
                     {
                         id: 5,
                         image: 'img/buy-dc-power-visa.svg',
+                        text: 'dc power visa',
                     },
                 ]
             }
@@ -42,5 +50,16 @@
 
 <style lang="scss" scoped>
 @use '../../assets/style/main.scss' as *;
-   
+
+ul > li:last-child {
+    img{
+        width: 80px !important;
+    }
+    div:last-child{
+        padding: 0 20px;
+    }
+    div:first-child{
+        padding-left: 20px;
+    }
+}
 </style>
