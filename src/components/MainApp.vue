@@ -1,6 +1,10 @@
 <template>
     <main>
-        <div class="container py-3 ">
+        
+        <div class="container py-3 position-relative">
+            <h5 class="text-uppercase text-white current-series px-4 py-2 ">
+                current series
+            </h5>
             <div class="row">
                 <MainCard class="col-12 col-md-2 col-lg-2" v-for="(element, index) in comics" :key="index" :img="element.thumb" :title="element.series"/>
             </div>
@@ -36,5 +40,13 @@ import {comics} from '../data/array.js'
         border-radius: 0;
         border-color: $main_color!important;
         background-color: $main_color;
+    }
+    .current-series{
+        background-color: $main_color;
+        border-radius: 0;
+        position: absolute;
+        top: -20px;
+        left: -10px;
+        font-weight: bolder;
     }
 </style>
