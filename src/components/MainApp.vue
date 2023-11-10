@@ -1,16 +1,27 @@
 <template>
     <main>
-        <div class="container">
-            <h1 class="text-white py-4 m-0 ">
-                --&gt; Content goes here &lt;--
-            </h1>
+        <div class="container py-3 ">
+            <div class="row">
+                <MainCard class="col-12 col-md-2 col-lg-2" v-for="(element, index) in comics" :key="index" :img="element.thumb" :title="element.series"/>
+            </div>
+            
         </div>
     </main>
 </template>
 
 <script>
+import MainCard from './main/MainCard.vue'
+import {comics} from '../data/array.js'
     export default {
         name: 'MainApp',
+        components: {
+            MainCard,
+        },
+        data(){
+            return{
+                comics: comics,
+            }
+        }
     }
 </script>
 

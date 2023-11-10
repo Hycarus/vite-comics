@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mt-2 ">
         <div class="d-flex justify-content-between align-item-center">
             <div class="">
                 <Logo/>

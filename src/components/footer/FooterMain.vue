@@ -6,7 +6,7 @@
                     <h2 class="text-uppercase text-white">dc comics</h2>
                     <ul class="list-unstyled">
                         <li class="text-white" v-for="element in dcComics" :key="element.id">
-                            {{ element.text }}
+                            <a href="#" class="text-white text-decoration-none">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -14,7 +14,7 @@
                     <h2 class="text-uppercase text-white">shop</h2>
                     <ul class="list-unstyled">
                         <li class="text-white" v-for="element in shop" :key="element.id">
-                            {{ element.text }}
+                            <a href="#" class="text-white text-decoration-none">{{ element.text }}</a>
                         </li>
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
                 <h2 class="text-uppercase text-white">dc</h2>
                 <ul class="list-unstyled">
                     <li class="text-white" v-for="element in dc" :key="element.id">
-                        {{ element.text }}
+                        <a href="#" class="text-white text-decoration-none">{{ element.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -31,7 +31,7 @@
                 <h2 class="text-uppercase text-white">sites</h2>
                 <ul class="list-unstyled">
                     <li class="text-white" v-for="element in sites" :key="element.id">
-                        {{ element.text }}
+                        <a href="#" class="text-white text-decoration-none">{{ element.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -166,7 +166,7 @@
     height: 400px;
     object-fit: cover;
 }
-li{
+a{
     font-weight: lighter;
 }
 </style>

@@ -3,7 +3,7 @@
         <ul class="nav py-3">
             <li class="my-3 d-flex align-items-center justify-content-center" v-for="(element, index) in footerTopImage" :key="index">
                 <div class="text-center">
-                    <img class="w-50" :src="element.image" :alt="element.text">
+                    <img class="my-img-w" :src="element.image" :alt="element.text">
                 </div>
                 <div class="text-uppercase text-white my-text">{{ element.text }}</div>
             </li>
@@ -61,5 +61,8 @@ ul > li:last-child {
     div:first-child{
         padding-left: 20px;
     }
+}
+.my-img-w{
+    width: 40%;
 }
 </style>
