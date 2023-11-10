@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div>
         <img :src="img" class="card-img-top" :alt="title">
         <div class="card-body">
             <p class="text-white py-3 card-text">{{ title.toLocaleUpperCase() }}</p>
@@ -27,5 +27,8 @@
         height: 250px;
         object-fit: cover;
         object-position: 0 20px;
+    }
+    p{
+        text-wrap: balance;
     }
 </style>
