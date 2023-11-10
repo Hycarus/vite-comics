@@ -4,7 +4,9 @@
             <div class="row">
                 <MainCard class="col-12 col-md-2 col-lg-2" v-for="(element, index) in comics" :key="index" :img="element.thumb" :title="element.series"/>
             </div>
-            
+            <div class="text-center">
+                <button class="btn text-uppercase text-white border my-button px-5">load more</button>
+            </div>
         </div>
     </main>
 </template>
@@ -29,5 +31,10 @@ import {comics} from '../data/array.js'
 @use '../assets/style/main.scss' as *;
     main{
         background-color: $secondary_color;
+    }
+    .my-button{
+        border-radius: 0;
+        border-color: $main_color!important;
+        background-color: $main_color;
     }
 </style>
